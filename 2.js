@@ -1,5 +1,5 @@
 function isPrime(num) {
-    let _true = 'число простое', _false = 'ответ неверный';
+    let _true = 'С‡РёСЃР»Рѕ РїСЂРѕСЃС‚РѕРµ', _false = 'РѕС‚РІРµС‚ РЅРµРІРµСЂРЅС‹Р№';
     if (num <= 1 && num > 1000) return _false;
     if (num == 2) return _true;
     for (let i = 2; i <= num / 2; i++) {
@@ -12,16 +12,14 @@ function isPrime(num) {
 console.log(isPrime(1001));
 console.log(isPrime(53));
 
-
-
  function isPrime(n) {
-            if (!Number.isInteger(n) || n < 2 || n > 1000) return "данные неверны";
+            if (!Number.isInteger(n) || n < 2 || n > 1000) return "РґР°РЅРЅС‹Рµ РЅРµРІРµСЂРЅС‹";
  
             let k = Math.sqrt(n);
             for (let i = 2; i <= k; i++)
-                if (n % i === 0) return "не простое число";
+                if (n % i === 0) return "РЅРµ РїСЂРѕСЃС‚РѕРµ С‡РёСЃР»Рѕ";
  
-            return "простое число";
+            return "РїСЂРѕСЃС‚РѕРµ С‡РёСЃР»Рѕ";
         }
  
         console.log(isPrime(555));
